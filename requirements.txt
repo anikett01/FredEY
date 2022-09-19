@@ -3,12 +3,10 @@ botbuilder-integration-aiohttp>=4.14.0
 botbuilder-dialogs>=4.14.0
 botbuilder-ai>=4.14.0
 
-pickle
-os
+os-win
 nltk
 numpy
 pandas
-json
 keras
 tensorflow
 regex
