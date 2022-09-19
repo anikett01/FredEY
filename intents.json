@@ -1,0 +1,189 @@
+{
+   "intents":[
+    
+      {
+         "tag":"goodbye",
+         "patterns":[
+            "Bye",
+            "See you later",
+            "Goodbye",
+            "Nice chatting to you, bye",
+            "Till next time",
+            "Thanks!",
+            "thanks"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+      {
+         "tag":"restart",
+         "patterns":[
+			"BATMAN", "batman"
+         ],
+         "responses":[
+         ],
+         "context":[
+            ""
+         ]
+      },
+      
+       {
+         "tag":"alos",
+         "patterns":[
+            "what is the alos for current year",
+            "what is the average length of stay",
+            "alos value",
+            "average length of stay"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"bussi_prom_expenses",
+         "patterns":[
+            "what is the Business Promotion Expenses for current year",
+            "what is the business promotion expense",
+            "business promotion expenses value",
+            "business promotion exp"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"fnb_revenue",
+         "patterns":[
+            "what is the F&B Revenue for current year",
+            "what is the food and beverages",
+            "fnn revenue value",
+            "F&B Revenue"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	   {
+         "tag":"goppar",
+         "patterns":[
+            "what is the goppar for current year",
+            "what is Gross Operating Profit per Available Room",
+            "Gross Operating Profit per Available Room value",
+            "goppar"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"gop",
+         "patterns":[
+            "what is the gop for current year",
+            "what is Gross Operating Profit",
+            "Gross Operating Profit ",
+            "gop"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	   {
+         "tag":"adr",
+         "patterns":[
+            "what is the adr for current year",
+            "what is average daily rate",
+            "Average Daily Rate",
+            "adr"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"revpar",
+         "patterns":[
+            "what is the revpar for current year",
+            "what is Revenue per available room",
+            "Revenue per available room",
+            "revpar"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	 
+	   {
+         "tag":"ebitdap",
+         "patterns":[
+            "what is the ebitdap for current year",
+            "what is Earnings before Interests, Taxes, Depreciation & Amortizations in terms of %",
+            "Earnings before Interests, Taxes, Depreciation & Amortizations in terms of percentage",
+            "ebitdap",
+			"ebitda",
+			"Earnings before Interests, Taxes, Depreciation & Amortizations"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"rooms_sold",
+         "patterns":[
+            "what is the rooms sold ",
+            "what is total rooms sold",
+            "Rooms Sold",
+            "total rooms sold at this property"
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+	  {
+         "tag":"unknown",
+         "patterns":[""
+         ],
+         "responses":[""
+         ],
+         "context":[
+            ""
+         ]
+      },
+       {
+         "tag":"occupancy rate",
+         "patterns":[
+            "occupancy rate",
+            "what is the rate of occupancy",
+            "occupancy rate for room",
+            "hotel rate of occupancy"
+         ],
+         "responses":[
+            ""
+         ],
+         "context":[
+            ""
+         ]
+      }
+
+   ]
+}
