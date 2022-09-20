@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'FredEY'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A2F198DEA390474EB9D3B661D2B2C7F4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_744AA7D4A8AF4551A3C2905A6DFE951F }}
