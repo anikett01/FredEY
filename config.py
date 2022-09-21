@@ -7,4 +7,4 @@ class DefaultConfig:
     PORT = 3978
     APP_ID = os.environ.get("MicrosoftAppId", "cf8addba-0bb4-4bd4-aa41-7e7508f926bf") #Enter your Microsoft App Id here (Azure Bot App ID)
     APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "wXY8Q~tYaFX4M0kICOs8F3o1WNE.Jj9M4TntzcE2") #Enter your Microsoft App Password here
-    #EXPIRE_AFTER_SECONDS = os.environ.get("ExpireAfterSeconds", 60)
+    EXPIRE_AFTER_SECONDS = os.environ.get("ExpireAfterSeconds", 60)
