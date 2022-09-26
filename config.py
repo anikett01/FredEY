@@ -5,6 +5,6 @@ class DefaultConfig:
     """ Bot Configuration """
 
     PORT = 3978
-    APP_ID = os.environ.get("MicrosoftAppId", "cf8addba-0bb4-4bd4-aa41-7e7508f926bf") #Enter your Microsoft App Id here (Azure Bot App ID)
-    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "wXY8Q~tYaFX4M0kICOs8F3o1WNE.Jj9M4TntzcE2") #Enter your Microsoft App Password here
+    APP_ID = os.environ.get("MicrosoftAppId", "1abc96f5-6c19-4cc7-9cd7-de1d4408fa30") #Enter your Microsoft App Id here (Azure Bot App ID)
+    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "sba8Q~h83G2~M.jQ1SVmVNu3eDqck6Hz1BkBrcvV") #Enter your Microsoft App Password here
     #EXPIRE_AFTER_SECONDS = os.environ.get("ExpireAfterSeconds", 60)
