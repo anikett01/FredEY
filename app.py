@@ -1,4 +1,6 @@
 
+#!/usr/bin/env python3 
+# ^ is the shebang, not a comment 
 
 import sys
 import traceback
@@ -23,7 +25,7 @@ CONFIG = DefaultConfig()
 # Create adapter.
 # See https://aka.ms/about-bot-adapter to learn more about how bots work.
 
-SETTINGS = BotFrameworkAdapterSettings("27683de7-f005-409e-85ca-8aeea2db0b98", "ywH8Q~OIvL_61ZdZy1RZ5nkapbNiNGaDA9WxwaY4")
+SETTINGS = BotFrameworkAdapterSettings(CONFIG.APP_ID, CONFIG.APP_PASSWORD)
 ADAPTER = BotFrameworkAdapter(SETTINGS)
 
 
