@@ -4,7 +4,6 @@ botbuilder-dialogs>=4.14.0
 botbuilder-ai>=4.14.0
 
 gunicorn
-asyncio
 aiohttp
 pickle-mixin
 nltk
