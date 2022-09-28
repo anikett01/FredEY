@@ -4,6 +4,7 @@ botbuilder-dialogs>=4.14.0
 botbuilder-ai>=4.14.0
 
 os-sys-linux>=0.0.0.dev0
+text-editor
 gunicorn
 asyncio
 aiohttp
