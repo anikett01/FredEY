@@ -12,7 +12,6 @@ CONFIG = DefaultConfig()
 import pickle
 import os
 import nltk
-nltk.download()
 import numpy as np
 import pandas as pd
 from datetime import datetime
