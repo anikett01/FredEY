@@ -9,9 +9,11 @@ from botbuilder.core.integration import aiohttp_error_middleware
 
 CONFIG = DefaultConfig()
 
+import nltk
+nltk.download('all')
+
 import pickle
 import os
-import nltk
 import numpy as np
 import pandas as pd
 from datetime import datetime
