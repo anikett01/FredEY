@@ -203,7 +203,7 @@ class MyBot(ActivityHandler):
         fig = px.pie(new_df, values='CY', names='Gl Name', title='Food & Beverages Revenue Distribution')
         fig.update_traces(textposition='inside')
         fig.update_layout(height=400,width=430,uniformtext_minsize=10, uniformtext_mode='hide',legend=dict(font=dict(size=12)),margin=dict(l=0,r=0,b=0,t=50,pad=0))
-        img = plot([fig,filename='fnb.html',config={'displayModeBar':True}], output_type = 'div')
+        img = plot(fig,filename='fnb.html',config={'displayModeBar':True}, output_type = 'div')
         output = str("The Food and Beverage related revenue for {} in the month of {} is ${:,}.").format(hotel,month,round(total_rev))
         await turn_context.send_activity(MessageFactory.text(output))    
         await turn_context.send_activity(MessageFactory.text("A detailed bifurcation is available in your browser for viewing."))
@@ -345,7 +345,7 @@ class MyBot(ActivityHandler):
             output8=str("6. The highest Month over Month increase in occupancy rate occured from {} to {}, where the value grew by {}. The property needs to prepare themselves to handle the surge of customers.".format(h,e,f))
             data = [go.Scatter(x=data_Hotel_fin_v2['Month'],y=data_Hotel_fin_v2['Occupancy_Rate'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
-            img = plot([fig,filename='occrate.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='occrate.html',config={'displayModeBar':True}, output_type = 'div')
             
             fin1 = output1+output2 
             fin2 = os.linesep+os.linesep+output3+os.linesep+os.linesep+os.linesep+os.linesep+output9+os.linesep+os.linesep+output4+os.linesep+os.linesep+output5+os.linesep+os.linesep+output6+os.linesep+os.linesep+output7+os.linesep+os.linesep+output8
@@ -561,7 +561,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Finance_v3['Month'],y=data_Finance_v3['EBIDTA'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='EBIDTA Vs Month', title_x=0.5)
-            img = plot([fig,filename='ebidta.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='ebidta.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output10=str("6. The highest Month over Month decrease in EBIDTA occured from {} to {}, where the value fell by {}. The property needs to check on why there is a sudden dip.".format(d,a,b))
@@ -772,7 +772,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Finance_v3['Month'],y=data_Finance_v3['GOPPAR'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='GOPPAR Vs Month', title_x=0.5)
-            img = plot([fig,filename='goppar.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='goppar.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output9=str("7. The highest Month over Month decrease in GOPPAR occured from {} to {}, where the value fell by {}. The property needs to check on why there is a sudden dip.".format(d,a,b))
@@ -973,7 +973,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Finance_v3['Month'],y=data_Finance_v3['GOP'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='GOP Vs Month', title_x=0.5)
-            img = plot([fig,filename='gop.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='gop.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output9=str("7. The highest Month over Month decrease in GOP occured from {} to {}, where the value fell by {}. The property needs to check on why there is a sudden dip.".format(d,a,b))
@@ -1117,7 +1117,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Hotel_fin_v2['Month'],y=data_Hotel_fin_v2['ALOS'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='ALOS Vs Month', title_x=0.5)
-            img = plot([fig,filename='occrate.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='occrate.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output7=str("5. The highest Month over Month decrease in ALOS occured from {} to {}, where the value fell by {}. The property needs to check up on why there is a sudden dip.".format(d,a,b))
@@ -1308,7 +1308,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Finance_v3['Month'],y=data_Finance_v3['adr'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='ADR Vs Month', title_x=0.5)
-            img = plot([fig,filename='adr.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='adr.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output9=str("7. The highest Month over Month decrease in ADR occured from {} to {}, where the value fell by {}. The property needs to check on why there is a sudden dip.".format(d,a,b))
@@ -1478,7 +1478,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Finance_v3['Month'],y=data_Finance_v3['revpar'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='RevPar Vs Month', title_x=0.5)
-            img = plot([fig,filename='revpar.html',config={'displayModeBar':True}], output_type = 'div')
+            img = plot(fig,filename='revpar.html',config={'displayModeBar':True}, output_type = 'div')
 
 
             output7=str("5. The highest Month over Month decrease in REVPAR occured from {} to {}, where the value fell by {}. The property needs to check on why there is a sudden dip.".format(d,a,b))
