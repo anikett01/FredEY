@@ -1118,7 +1118,7 @@ class MyBot(ActivityHandler):
             data = [go.Scatter(x=data_Hotel_fin_v2['Month'],y=data_Hotel_fin_v2['ALOS'],marker_color='midnightblue',)]
             fig = go.Figure(data=data)
             fig.update_layout(title_text='ALOS Vs Month', title_x=0.5)
-            img = plotly.offline.plot(fig,filename='occrate.html',config={'displayModeBar':True})
+            img = plotly.offline.plot(fig,filename='alos.html',config={'displayModeBar':True})
 
 
             output7=str("5. The highest Month over Month decrease in ALOS occured from {} to {}, where the value fell by {}. The property needs to check up on why there is a sudden dip.".format(d,a,b))
